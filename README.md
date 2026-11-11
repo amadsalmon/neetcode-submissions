@@ -1,72 +1,49 @@
-# NeetCode Solutions — @amadsalmon
+# NeetCode Submissions
 
-> Synced automatically from [NeetCode.io](https://neetcode.io) · Repository: `neetcode-submissions`
+Everything in this repository is automatic.
 
----
+- Solutions are pushed here by [NeetCode](https://neetcode.io)'s GitHub Sync every time I submit on the platform - nothing is hand-picked or cleaned up after the fact.
+- This README, including the stats and the highlighted solutions below, is generated and kept up to date automatically by my AI assistant. It refreshes as new submissions land, so what you're reading always reflects the current state of the repo.
 
-## What is this?
+What you see is the actual working process, not a curated portfolio.
 
-[NeetCode.io](https://neetcode.io) is a coding interview preparation platform featuring curated problems, video solutions, and an in-browser code editor. This repository is automatically populated with your accepted (or all) solutions using the **GitHub Sync** feature.
+## At a glance
 
----
+- **110+ problems** synced across data structures & algorithms, SQL, and design patterns
+- **200+ commits** since June 2026 - one per submission, retries included
+- **50+ problems** carry multiple submissions, so the path from first attempt to final version stays visible in the file history
+- **Python 3** throughout, plus SQL
 
-## How GitHub Sync works
-
-1. **Connect your GitHub account** on [neetcode.io/profile/github](https://neetcode.io/profile/github).
-2. **Auto-commit** — every time you submit a solution on NeetCode, it is pushed here automatically (configurable by status).
-3. **Bulk Sync** — push all your past solutions at once from the GitHub settings page.
-4. **Manual sync** — from the submission history panel on any problem page, sync or remove individual submissions.
-
----
-
-## Repository structure
-
-Solutions are organized by topic folder, then problem ID. Each submission is stored as a separate file:
+## How it's organized
 
 ```
-<topic-folder>/
-  <problem-id>/
-    submission-0.<ext>   ← first submission
-    submission-1.<ext>   ← second submission
-    ...
+Data Structures & Algorithms/<problem>/submission-N.py
+SQL/<problem>/submission-N.sql
+Design Patterns/<pattern>/submission-N.py
 ```
 
-**Example:**
-```
-Data Structures & Algorithms/two-integer-sum/submission-0.py
-Data Structures & Algorithms/binary-search/submission-0.ts
-Python For Beginners/python-hello-world/submission-0.py
-```
+`submission-0` is the first attempt; later attempts on the same problem get their own numbered files, in order.
+
+## What the submissions show
+
+- **Reasoning written down, not just code.** In [median-of-two-sorted-arrays](https://github.com/amadsalmon/neetcode-submissions/blob/main/Data%20Structures%20%26%20Algorithms/median-of-two-sorted-arrays/submission-0.py), the docstring works from brute force to an O(n) merge and then to the O(log n) partition insight before the binary search implementation.
+- **Iteration kept in the file.** [products-of-array-discluding-self](https://github.com/amadsalmon/neetcode-submissions/blob/main/Data%20Structures%20%26%20Algorithms/products-of-array-discluding-self/submission-4.py) keeps the naive O(n^2) version in the same file as the O(n) prefix/suffix pass, both labeled.
+- **The classic hards, done properly.** [trapping-rain-water](https://github.com/amadsalmon/neetcode-submissions/blob/main/Data%20Structures%20%26%20Algorithms/trapping-rain-water/submission-0.py) with precomputed maxes, [sliding-window-maximum](https://github.com/amadsalmon/neetcode-submissions/blob/main/Data%20Structures%20%26%20Algorithms/sliding-window-maximum/submission-0.py) with a real monotonic deque, and a [hand-rolled LRU cache](https://github.com/amadsalmon/neetcode-submissions/blob/main/Data%20Structures%20%26%20Algorithms/lru-cache/submission-4.py) built on an explicit doubly linked list.
+- **Persistence on the ones that fight back.** [minimum-window-with-characters](https://github.com/amadsalmon/neetcode-submissions/blob/main/Data%20Structures%20%26%20Algorithms/minimum-window-with-characters/submission-15.py) is the fifteenth submission on that problem - and the one that lands the clean two-pointer with early exit.
+
+## Auto-selected highlights
+
+Chosen by the automated review, which re-reads the repo and refreshes this list as stronger solutions land.
+
+| Problem | What it demonstrates |
+| --- | --- |
+| [median-of-two-sorted-arrays](https://github.com/amadsalmon/neetcode-submissions/blob/main/Data%20Structures%20%26%20Algorithms/median-of-two-sorted-arrays/submission-0.py) | Hard. Full written derivation from brute force to O(log n), clean edge handling |
+| [trapping-rain-water](https://github.com/amadsalmon/neetcode-submissions/blob/main/Data%20Structures%20%26%20Algorithms/trapping-rain-water/submission-0.py) | Hard. O(n) time with precomputed left/right maxes |
+| [sliding-window-maximum](https://github.com/amadsalmon/neetcode-submissions/blob/main/Data%20Structures%20%26%20Algorithms/sliding-window-maximum/submission-0.py) | Hard. Monotonic deque, textbook shape |
+| [minimum-window-with-characters](https://github.com/amadsalmon/neetcode-submissions/blob/main/Data%20Structures%20%26%20Algorithms/minimum-window-with-characters/submission-15.py) | Hard. Fifteen attempts kept; the final one is a clean two-pointer with early exit |
+| [lru-cache](https://github.com/amadsalmon/neetcode-submissions/blob/main/Data%20Structures%20%26%20Algorithms/lru-cache/submission-4.py) | Hand-rolled doubly linked list plus hash map |
+| [products-of-array-discluding-self](https://github.com/amadsalmon/neetcode-submissions/blob/main/Data%20Structures%20%26%20Algorithms/products-of-array-discluding-self/submission-4.py) | Brute force and optimal kept side by side in one file |
 
 ---
 
-## Supported languages
-
-| Language | Extension |
-|---|---|
-| Python | `.py` |
-| JavaScript | `.js` |
-| TypeScript | `.ts` |
-| Java | `.java` |
-| C++ | `.cpp` |
-| C# | `.cs` |
-| Go | `.go` |
-| Rust | `.rs` |
-| Kotlin | `.kt` |
-| Swift | `.swift` |
-| SQL | `.sql` |
-
----
-
-## Settings
-
-Manage your sync preferences at [neetcode.io/profile/github](https://neetcode.io/profile/github):
-
-- **Auto-commit toggle** — enable or disable automatic commits on submission
-- **Status filter** — sync all submissions or accepted only
-- **Rename repository** — rename this repo or start fresh with a new one
-- **Bulk Sync** — push all past solutions at once (rate-limited)
-
----
-
-*Generated by [NeetCode GitHub Integration](https://neetcode.io)*
+<sub>Synced automatically from [NeetCode.io](https://neetcode.io) via GitHub Sync. This README is generated and maintained automatically; last refresh November 2026.</sub>
